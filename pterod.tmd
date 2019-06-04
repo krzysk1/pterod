@@ -169,7 +169,6 @@
             >
     
 
-
             // Gears
 
             <[rigidbody][NoseGear][]
@@ -278,30 +277,30 @@
             <[wheel][NoseWheelHull][]
                 <[float64][K][336700]>
                 <[float64][D][2886]>
-                <[float64][Radius][0.3]>
+                <[float64][Radius][0.4823]>
                 <[string8][Body][NoseGear]>
-                <[tmvector3d][R0][1.385 0 -1.695]>
+                <[tmvector3d][R0][1.385 0 -1.514]>
             >
             <[wheel][TailWheelHull][]
                 <[float64][K][336700]>
                 <[float64][D][2886]>
-                <[float64][Radius][0.3]>
+                <[float64][Radius][0.4823]>
                 <[string8][Body][TailGear]>
-                <[tmvector3d][R0][0.1 0 -1.385]>
+                <[tmvector3d][R0][0.9978 0 -1.204]>
             >
             <[wheel][LeftWheelHull][]
                 <[float64][K][336700]>
                 <[float64][D][2886]>
-                <[float64][Radius][0.3]>
+                <[float64][Radius][0.1627]>
                 <[string8][Body][LeftGear]>
-                <[tmvector3d][R0][-2.792 2.98 -0.752]>
+                <[tmvector3d][R0][-2.792 2.98 -0.889]>
             >
             <[wheel][RightWheelHull][]
                 <[float64][K][336700]>
                 <[float64][D][2886]>
-                <[float64][Radius][0.3]>
+                <[float64][Radius][0.1627]>
                 <[string8][Body][RightGear]>
-                <[tmvector3d][R0][-2.792 -2.98 -0.752]>
+                <[tmvector3d][R0][-2.792 -2.98 -0.889]>
             >
             <[output][GroundRollSpeedNoseWheel][]
                 <[string8][Input][NoseWheelHull.Speed]>
@@ -321,7 +320,12 @@
             <[output][GroundRollLoadLeftWheel][]
                 <[string8][Input][LeftWheelHull.Load]>
             >    
-
+            <[output][GroundRollSpeedRightWheel][]
+                <[string8][Input][RightWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadRightWheel][]
+                <[string8][Input][RightWheelHull.Load]>
+            >  
 
             // Airfoils
 
@@ -406,7 +410,6 @@
                 <[float64][AttachedCenterFlap][-0.12]>
             >
     
-
 
             // Aerowings
 
@@ -607,8 +610,7 @@
                 <[float64][PropwashOmega][4.0]>
                 <[float64][GroundEffectFactor][1.0]>
                 <[float64][GroundEffectScale][1.0]>
-            >
-    
+            > 
 
 
             // Aerofuselage
@@ -843,7 +845,7 @@
                 <[string8][Input][ServoElevatorTrim.Output]>
             >
             <[servoclassic][ServoAileronTrim][]
-                <[string8][Input][AileronTrimInput.Output]>
+                <[string8][Input][AileronTrim.Output]>
                 <[float64][Speed][0.5]>
                 <[float64][P1][0.5]>
             >
@@ -857,9 +859,6 @@
             >
             <[output_free][ServoRudderTrimOutput][]
                 <[string8][Input][ServoRudderTrim.Output]>
-            >
-            <[product][SteeringInput][]
-                <[string8][Inputs][RudderInput.Output ServoGearSequence.Output]>
             >
             <[servolinear][ServoSteering][]
                 <[string8][Input][RudderInput.Output]>
@@ -1064,22 +1063,6 @@
             >
             <[output][VerticalSpeedIndicatorNeedle][]
                 <[string8][Input][VerticalSpeedIndicator.VerticalSpeed]>
-            >
-            <[input_default][AltSettingInput][]
-                <[string8][Input][Controls.AirBrake]>
-            >
-            <[integral][AltimeterSetting][]
-                <[string8][Input][DeltaAltimeterSetting.Output]>
-                <[float64][InitialValue][101320]>
-            >
-            <[product][DeltaAltSetting][]
-                <[string8][Inputs][RudderInput.Output AltSettingInput.Output]>
-            >
-            <[product][DeltaAltimeterSetting][]
-                <[string8][Inputs][DeltaAltSetting.Output 100]>
-            >
-            <[output][AltimeterSetting][]
-                <[string8][Input][AltimeterSetting.Output]>
             >
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
