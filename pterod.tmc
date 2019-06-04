@@ -1,7 +1,7 @@
 <[file][][]
     <[object][][]
         <[int][Version][210]>
-        <[vec32array][ContactSpheres][ (1.385 0 -1.514 0.4823) (0.9978 0 -1.204 0.4823) (-2.792 2.98 -0.889 0.1627) (-2.792 -2.98 -0.889 0.1627) ]>
+        <[vec32array][ContactSpheres][ (1.385 0 -1.514 0.4823) (0.0998 0 -1.204 0.4823) (-2.792 2.98 -0.889 0.1627) (-2.792 -2.98 -0.889 0.1627) ]>
 		<[string8][DisplayName][Westland-Hill Pterodactyl]>
 		<[string8][DescriptionTextEN][Pterodactyl was the name given to a series of experimental tailless aircraft designs developed by Geoffrey T. R. Hill in the 1920s and early 1930s. Named after the genus Pterodactylus, a well-known type of Pterosaur commonly known as the pterodactyl, all but the first were produced by Westland Aircraft Ltd after Hill joined them. (from Wikipedia)
 Converted from FlightGear by Krzysztof Kaniewski. Original 3D model made by BARANGER Emmanuel.]>
@@ -9,7 +9,7 @@ Converted from FlightGear by Krzysztof Kaniewski. Original 3D model made by BARA
 		<[float64][Mass][1602.1]>
 		<[float64][MaximumSpeed][88.2]>
 		<[float64][MinimumSpeed][20]>
-        <[float64][ApproachSpeed][33.3]>
+        <[float64][ApproachSpeed][23.3]>
         <[float64][CruiseSpeed]  [55.6]>
 		<[tmvector2d][NormalSpeedRange][ 20 75 ]>
 		<[tmvector2d][CautionSpeedRange][ 75 88.2 ]>
