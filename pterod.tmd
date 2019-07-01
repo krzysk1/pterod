@@ -334,7 +334,7 @@
                 <[float64][ClAlpha][6.2835]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.02]>
                 <[float64][CmFlap][-0.2]>
                 <[float64][Cd0Base][0.005]>
@@ -354,7 +354,7 @@
                 <[float64][ClAlpha][6.2835]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.02]>
                 <[float64][CmFlap][-0.2]>
                 <[float64][Cd0Base][0.005]>
@@ -374,7 +374,7 @@
                 <[float64][ClAlpha][6.2835]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.02]>
                 <[float64][CmFlap][-0.2]>
                 <[float64][Cd0Base][0.005]>
@@ -394,7 +394,7 @@
                 <[float64][ClAlpha][6.2835]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.02]>
                 <[float64][CmFlap][-0.2]>
                 <[float64][Cd0Base][0.005]>
@@ -862,7 +862,7 @@
                 <[string8][Input][RudderInput.Output]>
                 <[float64][OutputSpeed][5.0]>
                 <[float64][Position][0.0]>
-                <[float64array][InputPosition][  -1 1 ]>
+                <[float64array][InputPosition][ -1 1 ]>
                 <[float64array][OutputPosition][ -0.5 0.5 ]>
             >
             <[output_free][ServoSteeringOutput][]
@@ -1076,7 +1076,7 @@
                 <[uint32][AngleID][Propeller.RotationAngle]>
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
-                <[tmvector3d][Axis][-1 0 0]>
+                <[tmvector3d][Axis][1 0 0]>
                 <[tmvector3d][Pivot][2.865 0 0.079]>
                 <[uint32][BladeNumber][2]> 
                 <[float64][Radius][0.813996]>
@@ -1085,11 +1085,11 @@
                 <[uint32][NumberStops][0]>
             >
             <[rotatingbodygraphics][HeliceCompleteCone][]
-                <[string8][GeometryList][  ]>
+                <[string8][GeometryList][ ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
-                <[tmvector3d][Axis][-1 0 0]>
+                <[tmvector3d][Axis][1 0 0]>
                 <[tmvector3d][Pivot][2.865 0 0.079]>
             >
             <[graphics_propeller_blade][HeliceCompleteBlades][]
@@ -1099,7 +1099,7 @@
                 <[uint32][AngleID][Propeller.RotationAngle]>
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
-                <[tmvector3d][Axis][1 0 0]>
+                <[tmvector3d][Axis][-1 0 0]>
                 <[tmvector3d][Pivot][2.865 0 0.079]>
                 <[float64][Radius][0.813996]>
                 <[string8][InputPitch][0.0]>
@@ -1250,13 +1250,13 @@
                 <[string8][InputTransform][pilot_tete_Transform.Output]>
                 <[uint32][ShowInside][9]>
             >
-            <[rigidbodygraphics][Instruments_ai][]
+            <[rigidbodygraphics][Instruments][]
                 <[string8][GeometryList][ barre barre1 barre2 faceturn fond visses vitre
-                 knob face alt_fond poly alt_vitre 
-                 asi_face asi_fond asi_vitre
-                 bar compass_fond compass_vitre
-                 vsi_face vsi_fond vsi_vitre 
-                rpm_face rpm_fond rpm_vitre ]> 
+						 knob face alt_fond poly alt_vitre 
+						 asi_face asi_fond asi_vitre
+						 bar compass_fond compass_vitre
+						 vsi_face vsi_fond vsi_vitre 
+						rpm_face rpm_fond rpm_vitre ]> 
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1381,7 +1381,15 @@
             >
             <[graphics_mapping][vsi_needle_Mapping][]
                 <[string8][Input][vsi_needle_Input.Output]>
-                <[tmvector2d][Map][ (-6000 2.96706) (-4000 2.426008) (-2000 1.448623) (-1000 0.837758) (0 0) (1000 -0.837758) (2000 -1.448623) (4000 -2.426008) (6000 -2.96706) ]>
+                <[tmvector2d][Map][ (-6000 2.96706) 
+									(-4000 2.426008) 
+									(-2000 1.448623) 
+									(-1000 0.837758) 
+									(0 0) 
+									(1000 -0.837758) 
+									(2000 -1.448623) 
+									(4000 -2.426008) 
+									(6000 -2.96706) ]>
             >
             <[hingedbodygraphics][vsi_needle][]
                 <[string8][GeometryList][ vsi_needle ]>
